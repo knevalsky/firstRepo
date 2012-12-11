@@ -26,12 +26,13 @@
 			<div class="tutorialTitle"> 
 				<a href="list.html">List</a> <br />
 			</div>
-				A List is the simplest abstract data type, simply an ordered collection of values.
-				This can be implemented in several ways, such as using an array:
+				A List is the simplest abstract data type, just an ordered collection of values.
+				It can be implemented in several ways, such as using an array:
 			<br /><br />
 				<div class="javaCode"> int intList[] = {0,1,2,3,4}; </div>
 			<br /><br />
-				Another way is to create a "Linked List"- creating a sequence of Nodes(values)which point to the next value:
+				This is convenient, but it has one major flaw; we can't resize the list.
+				Another implementation is to create a "Linked List" data structure- a sequence of Nodes(values) which point to the next value:
 			<br /><br />
 				<div class="javaCode"> 
 					public class Node{<br />
