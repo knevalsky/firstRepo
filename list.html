@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>List Tutorial</title>
+<link rel="stylesheet" href="css/styling.css" />
+
+</head>
+<body>
+<div class="container">
+	<div class="header"> 
+		<div id="headerName">Kevin Nevalsky <br /></div>
+		<span class="menuNav">
+			<nav class="center">
+				<a href="projects.html">Projects </a>
+				<a href="resume.html"> Resume </a>
+				<a href="volleyball.html">Extracurriculars </a>
+				<a href="about.html">About Me</a>
+			</nav>
+		</span>
+	</div>
+	<div class="content">
+
+		<span class="center">
+			<h1> Data Structures Tutorial </h1>
+			<div class="tutorialTitle">List</div>
+				A List is the simplest abstract data type, simply an ordered collection of values.
+				This can be implemented in several ways, such as using an array:
+			<br /><br />
+				<div class="javaCode"> int intList[] = {0,1,2,3,4}; </div>
+			<br /><br />
+				Another way is to create a "Linked List"- creating a sequence of Nodes(values)which point to the next value:
+			<br /><br />
+				<div class="javaCode"> 
+					public class Node{<br />
+						&nbsp int value;<br />
+						&nbsp Node next;<br />
+						&nbsp public Node(int value, Node next){<br />
+						&nbsp &nbsp this.value = value;<br />
+						&nbsp &nbsp this.next = next;<br />
+						&nbsp }<br />
+					}<br />
+				</div>
+			<br /><br />
+				In this implementation, the first Node is called the "head" and the last Node the "tail".
+				To keep track of the List, we simply need to keep track of the head then traverse the "next" pointer of each Node to access the rest of the list.
+				The tail Node has no next Node, therefore we assign null.
+
+		</span>
+	</div>
+	<div class="footer">
+		2012 Kevin Nevalsky
+	</div>
+</div>
+</body>
+</html>
