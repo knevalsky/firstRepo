@@ -124,6 +124,11 @@ li
 .tutorialTitle
 {
 	text-align:left;
+}
+.tutorialTitle a:link, .tutorialTitle a:visited, .tutorialTitle a:hover, .tutorialTitle a:active 
+{
+	text-decoration:none;
+	text-align:left;
 	font-size:150%;
 	color:red;
 }
