@@ -23,7 +23,9 @@
 
 		<span class="center">
 			<h1> Data Structures Tutorial </h1>
-			<div class="tutorialTitle">List</div>
+			<div class="tutorialTitle"> 
+				<a href="list.html">List</a> <br />
+			</div>
 				A List is the simplest abstract data type, simply an ordered collection of values.
 				This can be implemented in several ways, such as using an array:
 			<br /><br />
@@ -34,17 +36,46 @@
 				<div class="javaCode"> 
 					public class Node{<br />
 						&nbsp int value;<br />
-						&nbsp Node next;<br />
+						&nbsp public Node(int value){<br />
+						&nbsp &nbsp this.value = value;<br />
+						&nbsp }<br />
 						&nbsp public Node(int value, Node next){<br />
 						&nbsp &nbsp this.value = value;<br />
+						&nbsp &nbsp this.next = next;<br />
+						&nbsp }<br />
+						&nbsp public void setNext( Node next){<br />
 						&nbsp &nbsp this.next = next;<br />
 						&nbsp }<br />
 					}<br />
 				</div>
 			<br /><br />
-				In this implementation, the first Node is called the "head" and the last Node the "tail".
+				In this implementation, the first Node in our sequence is called the "head" and the last Node the "tail".
 				To keep track of the List, we simply need to keep track of the head then traverse the "next" pointer of each Node to access the rest of the list.
 				The tail Node has no next Node, therefore we assign null.
+				An example of a linked list:<br /><br />
+				<div class="javaCode"> 						
+					Node head = new Node(1);<br />
+					Node second = new Node(3);<br />
+					Node tail = new Node(5);<br />
+					head.setNext(second);<br />
+					second.setNext(tail);<br />
+					<br />
+					Node currentNode;<br />
+					currentNode=head;<br />
+					while (currentNode.next != null)<br />
+					{ <br />
+					&nbsp System.out.println(value + " ");<br />
+					&nbsp currentNode = currentNode.next;<br />
+					}<br />
+				</div>
+				<br />
+				This example will print the sequence "1 3 5". Varients of the linked list are very popular:<br />
+				Doubly linked list- Same as the example above, but with a "previous" Node pointer. This allows traversal of the list in either direction. <br />
+				ArrayList- An arraylist is a linked list with indexies. This costs more internal storage, but allows us randomized access.<br />
+				<br /><span style="text-align:right">
+			<div class="tutorialTitleBottom"> 
+				 <a href="unavailable.html" >Next: Stacks and Queues</a> <br /> 
+			</div></span>
 
 		</span>
 	</div>
