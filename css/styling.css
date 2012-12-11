@@ -103,8 +103,8 @@ li
 .menuNav a:hover,.menuNav a:active
 {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='blue', endColorstr='gold'); /* for IE */
-	background: -webkit-gradient(linear, left top, left bottom, from(blue), to(gold)); /* for webkit browsers */
-	background: -moz-linear-gradient(top,  blue,  gold); /* for firefox 3.6+ */}
+	background: -webkit-gradient(linear, left top, left bottom, from(blue), to(#ff6)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  blue,  #ff6); /* for firefox 3.6+ */}
 .center
 {
 	text-align:center;
