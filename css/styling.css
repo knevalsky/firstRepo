@@ -114,7 +114,13 @@ li
 	padding:40px;
 	text-align:center;
 }
+.javaCode
+{
+	text-align:left;
+	margin-left:5%;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 
+}
 .tutorialTitle
 {
 	text-align:left;
